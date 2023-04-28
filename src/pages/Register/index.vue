@@ -114,7 +114,7 @@ export default {
       }
     },
     async userRegister() {
-      const success = await this.$validator.validateAll();
+      const success = await this.$validator.$validateAll();
       if (success) {
         try {
           const { phone, code, password, password1 } = this;
